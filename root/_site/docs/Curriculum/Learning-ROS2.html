@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Learning ROS2 | Lunabotics Documentation</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Learning ROS2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Technical docs for the Lunabotics project." />
+<meta property="og:description" content="Technical docs for the Lunabotics project." />
+<link rel="canonical" href="http://localhost:5260/docs/Curriculum/Learning-ROS2.html" />
+<meta property="og:url" content="http://localhost:5260/docs/Curriculum/Learning-ROS2.html" />
+<meta property="og:site_name" content="Lunabotics Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Learning ROS2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Technical docs for the Lunabotics project.","headline":"Learning ROS2","url":"http://localhost:5260/docs/Curriculum/Learning-ROS2.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=11f50a131e1f767305013d5a70b6e8aeb55fd3a7">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Learning ROS2</h1>
+      <h2 class="project-tagline">Technical docs for the Lunabotics project.</h2>
+      
+        <a href="https://github.com/HolmbergLandon/testGitPages" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="learning-ros2">Learning ROS2</h1>
+
+<p>Robot Operating System (ROS) is a set of open source algorithms, hardware driver software and tools developed to develop robot control software. Even though it has operating system in its name it is not an operating system. It is</p>
+
+<ul>
+  <li>Communication System (Publish Subscribe and Remote Method Invocation),</li>
+  <li>Framework &amp; Tools (Build system &amp; dependency management, Visualization, Record and Replay)</li>
+  <li>Ecosystem (Language bindings, Drivers, libraries and simulation (Gazebo)).</li>
+</ul>
+
+<p>(Quoted from <a href="https://medium.com/software-architecture-foundations/robot-operating-system-2-ros-2-architecture-731ef1867776">https://medium.com/software-architecture-foundations/robot-operating-system-2-ros-2-architecture-731ef1867776</a>)</p>
+
+<p>Basically, ROS2 is just how we communicate and coordinate information and commands throughout a large and complicated robotics system with a lot of moving parts</p>
+
+<h2 id="the-basics">The Basics</h2>
+
+<p>The basics concepts of ROS2 have shockingly good documentation that would be difficult to outdo, so for this part it will mostly be links to go do the tutorials yourself. Please <a href="https://github.com/UNL-Lunabotics/lunabotics-documentation/wiki/Dowloading-ROS2">download ROS2</a> if you haven’t already</p>
+
+<p>Below are the links for the sections you should go through IN ORDER. The sub bullet points are the specific tutorials you should do, and the crossed out ones are not required though you can still do them if you want</p>
+
+<h3 id="beginning-concepts">Beginning Concepts</h3>
+
+<p>The links below will teach you the basics concepts of ROS2. You can follow along with the turtlebot examples if that would help you, but feel free to just read through the sections</p>
+
+<ul>
+  <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools.html">Beginner: CLI Tools</a>
+    <ul>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html">Configuring environment</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html">Using turtlesim, ros2, and rqt</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html">Understanding nodes</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html">Understanding topics</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html">Understanding services</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Parameters/Understanding-ROS2-Parameters.html">Understanding parameters</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Actions/Understanding-ROS2-Actions.html">Understanding actions</a></li>
+      <li>
+        <s>Using rqt_console to view logs</s>
+      </li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-CLI-Tools/Launching-Multiple-Nodes/Launching-Multiple-Nodes.html">Launching nodes</a></li>
+      <li>
+        <s>Recording and playing back data</s>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="coding-the-basic-concepts">Coding the Basic Concepts</h3>
+
+<p>These tutorials are when you actually start to get into programming these things. It is HIGHLY recommended that you set up a temporary repository and follow along with creating all this code. I personally recommend typing out the code yourself and adding more comments as you go rather than copy/pasting</p>
+
+<p>What language you choose to write things in is up to you. You do not have to do both the Python and C++ versions of tutorials, though it may be useful to do both</p>
+
+<ul>
+  <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries.html">Beginner: Client Libraries</a>
+    <ul>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html">Using colcon to build packages</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html">Creating a workspace</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html">Creating a package</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">Writing a simple publisher and subscriber (C++)</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html">Writing a simple publisher and subscriber (Python)</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Service-And-Client.html">Writing a simple service and client (C++)</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Service-And-Client.html">Writing a simple service and client (Python)</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html">Creating custom msg and srv files</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Single-Package-Define-And-Use-Interface.html">Implementing custom interfaces</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Using-Parameters-In-A-Class-CPP.html">Using parameters in a class (C++)</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Using-Parameters-In-A-Class-Python.html">Using parameters in a class (Python)</a></li>
+      <li>
+        <s>Using ros2doctor to identify issues</s>
+      </li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Pluginlib.html">Creating and using plugins (C++)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="intermediate">Intermediate</h2>
+
+<p>This is where things start to get technical. Some of these sections are complicated enough to split into a more dedicated tutorial, so pay attention to which ones are crossed out as optional</p>
+
+<ul>
+  <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Intermediate.html">Intermediate</a>
+    <ul>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Rosdep.html">Managing Dependencies with rosdep</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Creating-an-Action.html">Creating an action</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Writing-an-Action-Server-Client/Cpp.html">Writing an action server and client (C++)</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Writing-an-Action-Server-Client/Py.html">Writing an action server and client (Python)</a></li>
+      <li>
+        <s>Writing a Composable Node (C++)</s>
+      </li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Composition.html">Composing multiple nodes in a single process</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Using-Node-Interfaces-Template-Class.html">Using the Node Interfaces Template Class (C++)</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Monitoring-For-Parameter-Changes-CPP.html">Monitoring for parameter changes (C++)</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Monitoring-For-Parameter-Changes-Python.html">Monitoring for parameter changes (Python)</a></li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Intermediate/Launch/Launch-Main.html">Launch</a></li>
+      <li>
+        <s>tf2</s>
+        <p>-&gt; This has its own dedicated section at <a href="https://github.com/UNL-Lunabotics/lunabotics-documentation/wiki/Underestanding-tf2">Understanding tf2</a></p>
+      </li>
+      <li>
+        <s>Testing</s>
+      </li>
+      <li>
+        <s>URDF</s>
+        <p>-&gt; <strong>This is one of the most important topics in all of ROS2</strong> and therefore has its own section at <a href="https://github.com/UNL-Lunabotics/lunabotics-documentation/wiki/Understanding-URDF-Files">Understanding URDF Files</a></p>
+      </li>
+      <li><a href="https://docs.ros.org/en/jazzy/Tutorials/Intermediate/RViz/RViz-Main.html">RViz</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="advanced">Advanced</h2>
+
+<p>For the most part, advanced topics shouldn’t be necessary for you to learn right now. It is recommended that you briefly look through what’s in the list just to know the option to research it is there if needed, but you do not have to go through any of them in depth unless you feel like it</p>
+
+<p><a href="https://docs.ros.org/en/jazzy/Tutorials/Advanced.html">https://docs.ros.org/en/jazzy/Tutorials/Advanced.html</a></p>
+
+<blockquote>
+  <p>Author: Ella Moody (https://github.com/TheThingKnownAsKit)</p>
+</blockquote>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/HolmbergLandon/testGitPages">testGitPages</a> is maintained by <a href="https://github.com/HolmbergLandon">HolmbergLandon</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

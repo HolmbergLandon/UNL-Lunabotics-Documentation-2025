@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The Linter | Lunabotics Documentation</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="The Linter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Technical docs for the Lunabotics project." />
+<meta property="og:description" content="Technical docs for the Lunabotics project." />
+<link rel="canonical" href="http://localhost:5260/docs/Administative/The-Linter.html" />
+<meta property="og:url" content="http://localhost:5260/docs/Administative/The-Linter.html" />
+<meta property="og:site_name" content="Lunabotics Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Linter" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Technical docs for the Lunabotics project.","headline":"The Linter","url":"http://localhost:5260/docs/Administative/The-Linter.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=11f50a131e1f767305013d5a70b6e8aeb55fd3a7">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">The Linter</h1>
+      <h2 class="project-tagline">Technical docs for the Lunabotics project.</h2>
+      
+        <a href="https://github.com/HolmbergLandon/testGitPages" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="the-linter">The Linter</h1>
+
+<p>In order to help keep the formatting clear and consistent, this repository utilizes a markdown linter. A linter is a tool that flags any format violations for the writer to fix. For example, the linter we use flags not starting a file with a title as a violation of the formatting guidelines. Please note that it does not catch spelling or grammar mistakes, just formatting. We are using a VSCode extension named markdownlint by David Anson. Documentation for this linter can be found at https://github.com/DavidAnson/markdownlint/tree/main</p>
+
+<p>For the most part, this linter should not require much maintenance besides just installing the extension when you first download the repository. It will not work when working on the web version of VSCode, which is one of the reasons why editing in the browser is not recommend</p>
+
+<p>Most of these are pretty basic rules, but we do have some custom settings (discussed below)</p>
+
+<p><u>Usually, the linter will only lint the current file that you have open, NOT the whole repository.</u> If you would like it to lint the whole repository, open VSCode commands (with either CTRL/CMD + SHIFT + P or just by clicking on the top center bar and adding a &gt;) and run the “Lint all Markdown files in the workspace with markdownlint” command. It should highlight any file containing a violation in red</p>
+
+<h2 id="disabled-rules">Disabled Rules</h2>
+
+<p>There are a number of default rules in markdownlint, and we have a few of them disabled</p>
+
+<ol>
+  <li>Some HTML tags are allowed, notably ‘s’ and ‘u’. <code class="language-plaintext highlighter-rouge">&lt;s&gt;</code> is for strike-through and <code class="language-plaintext highlighter-rouge">&lt;u&gt;</code> is for underline, which are useful tools for readability in long documents</li>
+  <li>Rule MD034 is the rule that requires every link to be a hyperlink (no bare links), which has been disabled since sometimes it is useful being able to see the whole link</li>
+  <li>Rule MD047 is the rule that requires every page to end with a newline. This has been disabled since the author tag replaces it (explained below)</li>
+</ol>
+
+<p>The list of all default rules can be found here: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md</p>
+
+<h2 id="custom-rule-required-author-tag">Custom Rule: Required Author Tag</h2>
+
+<p>Maintaining this wiki is going to be a lot of work for everyone involved. It requires a lot of technical experience to write detailed guides and good information, and it takes a lot of time and effort to acquire that knowledge. It is important to credit every page with its author to acknowledge them</p>
+
+<p>Please note that the author tag is not for the person who last revised the page (wiki should show revision histories for you), it is for the original author of the information behind the page. Small edits do not give authorship, but large edits should be credited by adding more than one author to the list. It is okay for a page to have many authors, but if at any point the original page’s information has been edited so much that the original author should no longer be on there, it is probably the time to make a new page and archive the old one rather than continually updating the same one</p>
+
+<p><u>One of the most important parts of having an author tag is to allow future communication with the author.</u> If someone wrote a document years ago and is no longer on the team, but you really need to know some more information, it is important to be able to know both 1. Who wrote that page and 2. How to contact them. For the most part, a GitHub account will be sufficient since most people will include their emails on their account. If you do not have your email on your account, please either add it or include additional contact information in your author tag</p>
+
+<p>Author tags will follow the following format and be included at the end of every document. The linter for this repository has been edited to make this a custom rule
+<code class="language-plaintext highlighter-rouge">&gt; Author: Firstname Lastname (github user link)</code></p>
+
+<p>Or, if there are multiple authors,</p>
+
+<pre><code class="language-Markdown">&gt; Author: Firstname Lastname (github user link)
+&gt; Author: Firstname Lastname (github user link)
+&gt; ... however many more authors
+</code></pre>
+
+<p>The order for the author tags does not indicate importance in writing a page, it is usually just in chronological order (though no strict ordering rules will be enforced)</p>
+
+<h2 id="custom-rule-ignore-files-starting-with-an-underscore">Custom Rule: Ignore Files Starting with an Underscore</h2>
+
+<p>This custom rule makes the linter ignore files that are prepended with an underscore. This is almost entirely here just to make the linter ignore the navigation sidebar, which is named _Sidebar.md. The Sidebar does not need to follow linting rules as it is not a regular page. Additionally, this will make the linter ignore all introduction pages, such as Administrative.md. There is one of these for each subsection and since they’re so short they do not require normal linting</p>
+
+<p>Unlike regular custom rules, this one is not implemented via a JavaScript file. This is enforced in two locations that accomplish two different things. Firstly, there is a setting listed in <code class="language-plaintext highlighter-rouge">settings.json</code> inside the <code class="language-plaintext highlighter-rouge">markdownlint.lintWorkspaceGlobs</code> that adds <code class="language-plaintext highlighter-rouge">!**/_*.md</code> as a filter. This prevents files that start with an underscore from being processed by the command “Lint all Markdown files in the workspace with markdownlint”. Secondly, in the root of the workspace there is a <code class="language-plaintext highlighter-rouge">.markdownlint-cli2.jsonc</code> file. All this file does is declare “<em>*/_</em>.md” as something that should be ignored when the linter runs normally (via saving a file)</p>
+
+<h2 id="editing-the-linter">Editing the Linter</h2>
+
+<p>The general settings for the linter can be found in <code class="language-plaintext highlighter-rouge">.vscode/settings.json</code></p>
+
+<p>Most of the linter configurations will be under the <code class="language-plaintext highlighter-rouge">markdownlint.config</code> block. This includes disabling specific rules and allowing certain HTML elements. Rule MD033 is the one that disallows any HTML tags, and to add allowed elements to it, you just add “element” into the allowed_elements list shown below</p>
+
+<pre><code class="language-JSON">"MD033": {
+            "allowed_elements": ["example"]
+        }
+</code></pre>
+
+<p>Custom linter rules will be JavaScript files stored inside <code class="language-plaintext highlighter-rouge">.vscode/markdownlint-rules</code>. Details on how to write a custom rule are located at https://github.com/DavidAnson/markdownlint/blob/main/doc/CustomRules.md. Once the JavaScript is written, you can add it to the custom rules import inside settings.json. You will just add the path to the custom rule inside the <code class="language-plaintext highlighter-rouge">markdownlint.customRules</code> block (note that this is a top-level block. It does NOT go inside <code class="language-plaintext highlighter-rouge">markdownlint.config</code>)</p>
+
+<pre><code class="language-JSON">"markdownlint.customRules": [
+    "./.vscode/markdownlint-rules/custom-rule.js"
+  ]
+</code></pre>
+
+<blockquote>
+  <p>Author: Ella Moody (https://github.com/TheThingKnownAsKit)</p>
+</blockquote>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/HolmbergLandon/testGitPages">testGitPages</a> is maintained by <a href="https://github.com/HolmbergLandon">HolmbergLandon</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
