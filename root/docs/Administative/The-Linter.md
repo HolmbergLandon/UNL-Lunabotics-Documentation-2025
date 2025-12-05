@@ -1,3 +1,7 @@
+---
+layout: default
+title: The Linter 
+---
 # The Linter
 
 In order to help keep the formatting clear and consistent, this repository utilizes a markdown linter. A linter is a tool that flags any format violations for the writer to fix. For example, the linter we use flags not starting a file with a title as a violation of the formatting guidelines. Please note that it does not catch spelling or grammar mistakes, just formatting. We are using a VSCode extension named markdownlint by David Anson. Documentation for this linter can be found at https://github.com/DavidAnson/markdownlint/tree/main

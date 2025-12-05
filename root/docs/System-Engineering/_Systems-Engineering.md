@@ -1,3 +1,7 @@
+---
+layout: default
+title: Systems Engineering Intro
+---
 # Systems Engineering Intro
 
 This is where information specifically for systems engineering will be kept. It will include things like diagrams, justification for certain decisions, design gates, and whatever else needs to be done

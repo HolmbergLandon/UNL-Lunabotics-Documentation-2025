@@ -1,3 +1,7 @@
+---
+layout: default
+title: Introduction to Programming 
+---
 # Introduction to Programming
 
 This guide will give a basic introduction to the major concepts of programming, go over some simple examples, and then redirect you to more comprehensive sources for learning more if you would like to continue exploring program. The main purpose of this guide is to equip you with enough information to be able to communicate with a programmer, not to teach you how to program

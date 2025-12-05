@@ -1,3 +1,7 @@
+---
+layout: default
+title: Installing OV9281 Global Shutter UVC Camera Software on Jetson
+---
 # Installing OV9281 Global Shutter UVC Camera Software on Jetson
 
 ## Setup Steps

@@ -1,3 +1,7 @@
+---
+layout: default
+title: Installing RPLidar Software on Jetson
+---
 # Installing RPLidar Software on Jetson
 
 Model: RPLidar A3M1-R3

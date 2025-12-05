@@ -1,7 +1,7 @@
 # _config.yml
 title: Lunabotics Documentation
 description: Technical docs for the Lunabotics project.
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
 
 # The following options are optional but nice to have:
 markdown: kramdown

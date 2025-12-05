@@ -1,3 +1,7 @@
+---
+layout: default
+title: Non-Programmer Friendly Zone Intro 
+---
 # Non-Programmer Friendly Zone Intro
 
 This will primarily consist of high level overview and simplified tutorials for anyone looking to learn a little more about programming. It will include resources for how to learn your first programming language, as well as understand the basic structure of our programming architecture

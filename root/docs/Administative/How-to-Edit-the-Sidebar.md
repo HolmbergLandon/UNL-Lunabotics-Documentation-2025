@@ -1,5 +1,8 @@
+---
+layout: default
+title: How to Edit the Sidebar
+---
 # How to Edit the Sidebar
-
 Wiki has a lot of limitations, including no easy support for subpages. Essentially every page in the repository is stored in only one singular folder, there are no subpages of anything. The folders you might see if you pulled the repository are purely for organizational purposes and do not contribute to the structure of the sidebar
 
 The sidebar is all typed out manually. It is not enjoyable to do, but it's what works with the limited capabilities of GitHub Wiki

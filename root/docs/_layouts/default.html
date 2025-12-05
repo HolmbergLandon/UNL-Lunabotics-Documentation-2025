@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="container" style="display:flex; min-height:100vh;">
+    <!-- Sidebar -->
+    <aside class="sidebar" style="width:250px; padding:15px; border-right:1px solid #ccc;">
+      {% include_relative sidebar.html %}
+    </aside>
+
+    <!-- Main content -->
+    <main class="content" style="flex:1; padding:15px;">
+      {{ content }}
+    </main>
+  </div>
+</body>
+</html>

@@ -1,3 +1,7 @@
+---
+layout: default
+title: Learning ROS2
+---
 # Learning ROS2
 
 Robot Operating System (ROS) is a set of open source algorithms, hardware driver software and tools developed to develop robot control software. Even though it has operating system in its name it is not an operating system. It is

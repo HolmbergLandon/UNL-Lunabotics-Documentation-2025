@@ -1,5 +1,8 @@
+---
+layout: default
+title: Home
+---
 # Home
-
 ## What and Why?
 
 Welcome to the UNL Lunabotics documentation wiki! This was started in 2025 over the summer as our subteams' first big push towards proper documentation.

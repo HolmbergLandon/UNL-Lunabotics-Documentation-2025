@@ -1,3 +1,7 @@
+---
+layout: default
+title: Curriculum Introduction 
+---
 # Curriculum Introduction
 
 If you are brand new to the programming subteam, it will be best to start at [Learning ROS2](https://github.com/UNL-Lunabotics/lunabotics-documentation/wiki/Learning-ROS2)
